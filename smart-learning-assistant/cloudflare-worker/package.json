@@ -1,0 +1,16 @@
+{
+  "name": "smart-learning-secure-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  },
+  "dependencies": {
+    "jose": "^6.1.0"
+  }
+}
+

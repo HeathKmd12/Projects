@@ -1,0 +1,15 @@
+.settings-stack { display: grid; gap: 18px; }
+.settings-stack .settings { margin: 0; }
+.toggle-row { display: flex; align-items: center; gap: 12px; padding: 13px 0; border-top: 1px solid #edf2f7; }
+.toggle-row:first-of-type { margin-top: 8px; }
+.toggle-row > div { flex: 1; display: grid; gap: 4px; }
+.toggle-row b { font-size: 12px; }
+.toggle-row small { color: #6c839d; font-size: 11px; }
+.toggle-row input { width: 42px; height: 23px; appearance: none; border-radius: 99px; background: #cbd9e7; position: relative; cursor: pointer; transition: .2s; }
+.toggle-row input::after { content: ''; position: absolute; width: 17px; height: 17px; top: 3px; left: 3px; border-radius: 50%; background: #fff; transition: .2s; }
+.toggle-row input:checked { background: #087cf0; }
+.toggle-row input:checked::after { transform: translateX(19px); }
+.save-settings { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.save-settings .form-note { margin: 10px 0 0; }
+@media (max-width: 600px) { .save-settings { align-items: flex-start; flex-direction: column; } }
+

@@ -1,0 +1,25 @@
+.user-card button {
+  min-width: 66px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.08);
+  color: transparent;
+  font-size: 0;
+  font-weight: 800;
+}
+
+.user-card button::after {
+  content: "Logout";
+  color: #dceeff;
+  font-size: 11px;
+}
+
+.user-card button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 760px) {
+  .user-card button { display: none; }
+}
+
