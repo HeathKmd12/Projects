@@ -1,0 +1,24 @@
+.assistant-shell { overflow: hidden; border: 1px solid #e1eaf4; border-radius: 18px; background: #fff; }
+.assistant-head { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 19px 22px; border-bottom: 1px solid #eaf0f6; }
+.assistant-head > div { display: flex; align-items: center; gap: 11px; }
+.assistant-head > div > span { width: 37px; height: 37px; display: grid; place-items: center; border-radius: 12px; background: #e7f2ff; color: #087cf0; }
+.assistant-head b { display: block; font-size: 13px; }
+.assistant-head small { color: #6c839d; font-size: 10px; }
+.assistant-head select { width: auto; min-width: 150px; }
+.chat-list { min-height: 340px; max-height: 530px; overflow: auto; padding: 22px; background: linear-gradient(180deg, #fcfdff, #f6faff); }
+.chat-list article { display: grid; gap: 13px; margin-bottom: 20px; }
+.chat-user, .chat-ai { max-width: min(760px, 90%); padding: 14px 16px; border-radius: 13px; font-size: 13px; line-height: 1.65; }
+.chat-user { justify-self: end; background: linear-gradient(135deg, #087cf0, #287fed); color: #fff; border-bottom-right-radius: 3px; }
+.chat-ai { background: #fff; border: 1px solid #e2eaf4; border-bottom-left-radius: 3px; }
+.chat-user small, .chat-ai small { display: block; margin-bottom: 6px; font-size: 10px; font-weight: 800; opacity: .82; }
+.chat-user p, .chat-ai p { margin: 0; white-space: pre-wrap; }
+.chat-empty { display: grid; place-items: center; min-height: 260px; text-align: center; color: #6c839d; }
+.chat-empty span { font-size: 28px; color: #087cf0; }
+.chat-empty h3 { margin: 10px 0 5px; color: #102a43; }
+.chat-empty p { margin: 0; font-size: 12px; }
+.chat-form { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 16px 22px; border-top: 1px solid #eaf0f6; }
+.chat-form textarea { min-height: 49px; max-height: 160px; padding: 14px; resize: vertical; border: 1px solid #d9e5f1; border-radius: 12px; outline: 0; }
+.chat-form textarea:focus { border-color: #58a7f5; box-shadow: 0 0 0 3px #d8edff; }
+.chat-form .form-note { grid-column: 1 / -1; }
+@media (max-width: 650px) { .assistant-head, .chat-form { align-items: stretch; grid-template-columns: 1fr; flex-direction: column; } .assistant-head { display: grid; } .assistant-head select { width: 100%; } .chat-user, .chat-ai { max-width: 100%; } }
+

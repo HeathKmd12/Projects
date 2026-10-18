@@ -1,0 +1,15 @@
+.material-manager { margin-bottom: 22px; }
+.manager-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 150px; gap: 10px; }
+.manager-grid .field { margin: 0; }
+.resource-toolbar { margin: 0 0 18px; max-width: 360px; }
+.resource-toolbar .field { margin: 0; }
+.material-meta { display: flex; gap: 7px; margin: -5px 0 15px; }
+.material-meta span { padding: 4px 7px; border-radius: 99px; background: #eef6ff; color: #4e779e; font-size: 9px; font-weight: 800; text-transform: capitalize; }
+.material-actions { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.material-actions > div { display: flex; flex-wrap: wrap; gap: 7px; justify-content: flex-end; }
+.material-actions button { padding: 0 !important; font-size: 10px !important; }
+.material-actions .delete { color: #d3314b !important; }
+.inactive-card { opacity: .62; background: #f7f9fc !important; }
+@media (max-width: 1000px) { .manager-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 650px) { .manager-grid { grid-template-columns: 1fr; } .material-actions { align-items: flex-start; flex-direction: column; } .material-actions > div { justify-content: flex-start; } }
+

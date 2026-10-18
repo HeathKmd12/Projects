@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "smart-learning-secure-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-09",
+  "workers_dev": true,
+  "vars": {
+    "FIREBASE_PROJECT_ID": "smart-tertiary-tech-learning",
+    "ALLOWED_ORIGIN": "https://smart-tertiary-tech-learning.web.app"
+  },
+  "secrets": {
+    "required": ["HF_TOKEN"]
+  }
+}
+
